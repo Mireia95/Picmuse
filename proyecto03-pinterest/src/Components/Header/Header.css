@@ -1,0 +1,119 @@
+#header {
+  height: var(--pm-header-height);
+  justify-content: space-around;
+  padding: 0px var(--pm-padding-l);
+  position: relative;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.divNav {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.divNav > ul > li {
+  padding: var(--pm-padding-s) var(--pm-padding-m);
+  border-radius: var(--pm-border-radius-m);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+a {
+  color: var(--pm-texto-color01);
+}
+
+.divNav > ul > li:hover {
+  background-color: var(--pm-button-color01);
+}
+
+.navResponsive {
+  display: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: var(--pm-border-radius-m);
+  padding: var(--pm-padding-s);
+}
+
+.navResponsive > img {
+  display: block;
+}
+
+.navResponsive:active {
+  background-color: var(--pm-color02);
+}
+
+/* nav para el mobile activado con el boton "menuMobile" */
+.divIcons > div {
+  width: 160px;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  background-color: var(--pm-color02);
+  font-weight: 500;
+  font-size: var(--pm-font-size-mobile01);
+  border-radius: var(--pm-border-radius-s);
+  transition: all 0.5s;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.divIcons > div > ul {
+  display: flex;
+  flex-direction: column;
+  height: 50svh;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.divIcons > div.closed {
+  width: 0px;
+}
+
+.divInput {
+  width: 500px;
+  position: relative;
+}
+
+.divInput > input {
+  width: 80%;
+  padding: var(--pm-padding-s) var(--pm-padding-m);
+  padding-left: 50px;
+  border-radius: var(--pm-border-radius-m);
+  background-color: var(--pm-color03);
+  border: none;
+  min-width: 200px;
+}
+
+.divInput > button {
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  background-color: transparent;
+  border: none;
+}
+
+.divIcons {
+  width: 250px;
+}
+
+.divIcons > button {
+  background-color: transparent;
+  border: none;
+}
+
+.divIcons > #searchButton {
+  display: none;
+}
+
+.inputResponsive {
+  display: none;
+}

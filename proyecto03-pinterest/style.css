@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  /* VARIABLES */
+  --pm-color01: white;
+  --pm-color02: #ffdce2;
+  --pm-color03: #ffedf0;
+  --pm-color04: black;
+  --pm-color05: #8e8e8e;
+
+  /* background */
+  --pm-bg-color: (var(--pm-color01));
+
+  /* TEXTOS */
+  --pm-texto-color01: var(--pm-color04);
+  --pm-texto-color02: var(--pm-color01);
+  --pm-texto-placeholder: #757575;
+
+  --pm-font-size-mobile01: 18px;
+  --pm-font-size-mobile02: 15px;
+
+  /* BUTTONS */
+  --pm-button-color01: var(--pm-color02);
+  --pm-input-color01: var(--pm-color03);
+  --pm-button-border: var(--pm-color04);
+
+  --pm-border-radius-s: 15px;
+  --pm-border-radius-m: 30px;
+
+  /* ALERT */
+  --pm-alert-bg-color: var(--pm-color01);
+
+  /* gap */
+  --pm-gap-s: 10px;
+  --pm-gap-m: 30px;
+
+  /* padding */
+  --pm-padding-s: 10px;
+  --pm-padding-m: 30px;
+  --pm-padding-l: 40px;
+
+  /* margin */
+  --pm-margin-s: 10px;
+  --pm-margin-m: 30px;
+  --pm-margin-l: 40px;
+  --pm-margin-xl: 50px;
+
+  /* height of header */
+  --pm-header-height: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--pm-bg-color);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--pm-gap-s);
+}
+
+button {
+  cursor: pointer;
+}

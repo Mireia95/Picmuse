@@ -1,0 +1,67 @@
+@media (max-width: 950px) {
+  .divNav {
+    display: none;
+  }
+
+  .divIcons {
+    width: 150px;
+  }
+
+  .navResponsive {
+    display: block;
+  }
+
+  .divInput {
+    width: 250px;
+    min-width: 200px;
+    margin: 0 var(--pm-margin-s);
+  }
+
+  .divInput > input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .inputResponsive {
+    display: block;
+  }
+
+  .divInput {
+    display: block;
+    position: absolute;
+    width: 88%;
+    top: var(--pm-header-height);
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  #notifications,
+  #messages {
+    display: none;
+  }
+
+  .divIcons > #searchButton {
+    display: block;
+  }
+
+  #header {
+    justify-content: space-between;
+    background-image: linear-gradient(
+      to bottom,
+      var(--pm-color02),
+      var(--pm-color01)
+    );
+  }
+
+  .divIcons.flex-container {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 400px) {
+  .divInput {
+    width: 78%;
+  }
+}
