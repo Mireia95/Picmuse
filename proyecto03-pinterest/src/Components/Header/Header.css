@@ -35,7 +35,6 @@ a {
   display: none;
   border: none;
   background-color: transparent;
-  cursor: pointer;
   border-radius: var(--pm-border-radius-m);
   padding: var(--pm-padding-s);
 }
