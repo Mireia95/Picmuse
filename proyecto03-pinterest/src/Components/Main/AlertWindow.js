@@ -1,7 +1,8 @@
+import { createButton } from './ButtonUpload';
 import { printResults } from './PetitionAPI';
 import { printSectionPhoto } from './PrintPhotos';
 
-export const printAlertWindow = () => {
+export const printAlertWindow = (state) => {
   const input = document.querySelector('#search');
   input.value = '';
   const main = document.querySelector('#main');
@@ -14,11 +15,15 @@ export const printAlertWindow = () => {
   divAlert.appendChild(buttonOK);
   divAlert.classList.add('alertWindow');
   main.appendChild(divAlert);
-
+  console.log(state);
   //imprimo fotos de gato de la API
   buttonOK.addEventListener('click', () => {
     divAlert.classList.toggle('hidden');
     printSectionPhoto(); //creo otra vez la section #gallery porque habiamos limpiado el main
-    printResults('gato', 1);
+    console.log(state);
+    state.word = 'gato';
+    state.page = 1;
+    printResults(state);
+    createButton(state);
   });
 };

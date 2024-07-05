@@ -5,18 +5,21 @@ import { createNav } from './Nav';
 import { createLogo } from './logo';
 import { createIcons } from './IconHeader';
 import { getNavMobile } from './NavResponsive';
-import { printResults, startWord } from '../Main/PetitionAPI';
+import { printResults } from '../Main/PetitionAPI';
 
 //funcion para crear el header
-export const createHeader = (elementoPadre) => {
+export const printHeader = (elementoPadre, state) => {
   const headerHTML = document.createElement('header');
   headerHTML.id = 'header';
   const imgLogo = createLogo();
   imgLogo.addEventListener('click', () => {
-    printResults(startWord);
+    state.word = state.startWord;
+    state.page = 1;
+    console.log(state);
+    printResults(state);
   });
   const divNav = createNav();
-  const inputComponent = printInput();
+  const inputComponent = printInput(state);
   const icons = createIcons();
 
   headerHTML.classList.add('flex-container');
