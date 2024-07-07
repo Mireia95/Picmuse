@@ -2,10 +2,7 @@ import { getUnsplashPeticion } from './PetitionAPI';
 import { printPhotos } from './PrintPhotos';
 
 export const loadMorePhotos = async (state) => {
-  console.log(state.word);
-  console.log(state.page);
   console.log(state);
-
   try {
     const photosAPI = await getUnsplashPeticion(state);
     console.log(photosAPI); //imprimo array de objetos que me devuelve la API

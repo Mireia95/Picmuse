@@ -6,10 +6,9 @@ export const createButton = (state) => {
   button.innerText = 'Cargar más';
   button.id = 'loadMore';
   main.appendChild(button);
-  console.log('CreateButton ha sido ejecutada');
 
   button.addEventListener('click', () => {
-    console.log('me has pulsado');
+    console.log('voy a cargar mas fotos');
     state.page++;
     loadMorePhotos(state);
   });

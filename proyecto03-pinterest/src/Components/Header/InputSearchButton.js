@@ -1,6 +1,6 @@
 import { printResults } from '../Main/PetitionAPI';
 
-export const createInputButton = (input, word, page) => {
+export const createInputButton = (input, state) => {
   const inputButton = document.createElement('button');
   inputButton.id = 'searchButton';
   const lupaImg = document.createElement('img');
@@ -10,9 +10,8 @@ export const createInputButton = (input, word, page) => {
   inputButton.appendChild(lupaImg);
 
   inputButton.addEventListener('click', () => {
-    word = input.value;
-    console.log(word);
-    printResults(word, page);
+    state.word = input.value;
+    printResults(state);
   });
   return inputButton;
 };

@@ -1,17 +1,10 @@
-import { state } from '../../../main';
 import { printAlertWindow } from './AlertWindow';
 import { cleanGallerySection } from './CleanSection';
-//!import { loadMorePhotos } from './LoadMore';
-//!import { checkButtonMorePhotos, createButton, getMorePhotos } from './LoadMore';
 import './Main.css';
 import './MainResponsive.css';
 import { printPhotos } from './PrintPhotos';
 
 //*variables globales
-//!export let word = ''; //valor del parametro query de la API. Sirve para el buscador de fotos
-//!export let startWord = 'design pastel'; //valor del parametro query de la API. Para la primera busqueda de fotos
-//!let page = 1; //valor del parametro page de la API. Al cargar mas fotos cambiará
-
 export let photosAPI = [];
 
 //*peticion API
@@ -32,7 +25,6 @@ export const getUnsplashPeticion = async (state) => {
 //*si la busqueda está sin resultados: imprime alert. Si no, imprime fotos
 export const printResults = async (state) => {
   state.page = 1;
-  console.log(state);
   try {
     photosAPI = await getUnsplashPeticion(state);
     console.log(photosAPI); //imprimo array de objetos que me devuelve la API

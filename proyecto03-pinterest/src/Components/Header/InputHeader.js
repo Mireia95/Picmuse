@@ -9,7 +9,7 @@ export const printInput = (state) => {
   input.name = 'search';
   input.placeholder = 'Buscar';
 
-  const searchButton = createInputButton(input, state.word, state.page);
+  const searchButton = createInputButton(input, state);
   divInput.classList.add('divInput');
   divInput.appendChild(searchButton);
   divInput.appendChild(input);
