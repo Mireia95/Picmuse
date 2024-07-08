@@ -2,10 +2,10 @@ import './Header.css';
 import './HeaderResponsive.css';
 import { printInput } from './InputHeader';
 import { createNav } from './Nav';
-import { createLogo } from './Logo';
 import { createIcons } from './IconHeader';
 import { getNavMobile } from './NavResponsive';
 import { printResults } from '../Main/PetitionAPI';
+import { createLogo } from './Logo';
 
 //funcion para crear el header
 export const printHeader = (elementoPadre, state) => {
