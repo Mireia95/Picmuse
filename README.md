@@ -25,7 +25,7 @@ El file "main.js" es el que está linkeado al file index.html : aquí llamo toda
   ** Si NO hay resultados imprimo un alert para avisar al usuario (funcion en componente "AlertWindow").
   ** Si hay resultados llamo la función "PrintPhotos" (en componente PrintPhotos.js) que se encarga de imprimir el resultado de la API en el <main>.
 
-- ButtonUpload.ks : pinta el botón "Cargar mas" a final de la página. Su evento "click" permite pintar mas fotos en la <section> : pasamos a la API el parametro "page" actualizado, para que imprima fotos de otra pagina y no salgan repetidas, y pintamos las nuevas fotos con la función loadMorePhotos(), en el file "LoadMore.js"
+- ButtonUpload.js : pinta el botón "Cargar mas" a final de la página. Su evento "click" permite pintar mas fotos en la <section> : pasamos a la API el parametro "page" actualizado, para que imprima fotos de otra pagina y no salgan repetidas, y pintamos las nuevas fotos con la función loadMorePhotos(), en el file "LoadMore.js"
 
 - LoadMore.js: se encarga de cargar mas fotos de la API cuando pulsamos en el botón "Cargar mas"a final de la página.
 
