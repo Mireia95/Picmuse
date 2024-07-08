@@ -1,6 +1,6 @@
 import { createButton } from './ButtonUpload';
-import { printResults } from './PetitionAPI';
-import { printSectionPhoto } from './PrintPhotos';
+import { printResults } from './PrintResults';
+import { printSectionPhoto } from './PrintMain';
 
 export const printAlertWindow = (state) => {
   const input = document.querySelector('#search');

@@ -1,11 +1,8 @@
 import { printHeader } from './src/Components/Header/Header';
 import { createButton } from './src/Components/Main/ButtonUpload';
 
-import { printResults } from './src/Components/Main/PetitionAPI';
-import {
-  printMain,
-  printSectionPhoto
-} from './src/Components/Main/PrintPhotos';
+import { printResults } from './src/Components/Main/PrintResults';
+import { printMain, printSectionPhoto } from './src/Components/Main/PrintMain';
 import './style.css';
 
 //*variables globales

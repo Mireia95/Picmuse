@@ -1,4 +1,4 @@
-import { printResults } from '../Main/PetitionAPI';
+import { printResults } from '../Main/PrintResults';
 
 export const createInputButton = (input, state) => {
   const inputButton = document.createElement('button');

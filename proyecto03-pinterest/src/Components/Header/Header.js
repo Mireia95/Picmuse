@@ -4,7 +4,7 @@ import { printInput } from './InputHeader';
 import { createNav } from './Nav';
 import { createIcons } from './IconHeader';
 import { getNavMobile } from './NavResponsive';
-import { printResults } from '../Main/PetitionAPI';
+import { printResults } from '../Main/PrintResults';
 import { createLogo } from './Logo';
 
 //funcion para crear el header

@@ -1,4 +1,4 @@
-import { printResults } from '../Main/PetitionAPI';
+import { printResults } from '../Main/PrintResults';
 import { createInputButton } from './InputSearchButton';
 
 export const printInput = (state) => {

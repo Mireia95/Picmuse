@@ -1,5 +1,5 @@
-import { getUnsplashPeticion } from './PetitionAPI';
-import { printPhotos } from './PrintPhotos';
+import { getUnsplashPeticion } from '../utils/APIPeticion';
+import { printPhotos } from '../utils/PrintPhotos';
 
 export const loadMorePhotos = async (state) => {
   console.log(state);
