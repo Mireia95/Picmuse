@@ -1,38 +1,42 @@
-# Proyecto03-Rockthecode
+# PicMuse project
 
-Proyecto 03 - pinterest
+In this project I have created a replica of Pinterest.
+The project focuses on learning how to use VITE by creating components to better organize and reuse the code, using HTML, CSS and JS VANILLA.
+I used the Unsplash API to make requests that allow us to get different images based on the user's search.
 
-PARTE JAVASCRIPT
-El file "main.js" es el que está linkeado al file index.html : aquí llamo todas las funciones vitales para que la página web funcione. Las funciones que llamo están en otras componentes:
+### JAVASCRIPT COMPONENTS
+The "main.js" file is linked to the index.html file: this is where I call all the essential functions to make the website work. The functions that I call are located in other components:
 
-1 La carpeta "Header" agrupa todo el contenido del <header>:
+#### HEADER
+The "Header" folder contains all the content relating to the header:
 
-- Header.js : es el file principal. Crea y pinta en el html todos los elementos del <header>. Llama a las otras componentes (cada una crea un elemento diferente)
-- Icon Header.js : crea un div con todos los iconos en la parte superior derecha (notificaciones, mensajes, login)
-- InputHeader.js: crea el buscador. Su evento permite guardar la palabra buscada y llamar a la función que pinta las fotos en el main
-- InputSearchButton.js: crea la lupa del buscador. Su evento permite guardar la palabra buscada en el input y llamar a la función que pinta las fotos en el main
-- Logo.js : crea el logo de la pagina. Si pulsado cargarà el estado inicial de la página.
-- Nav.js: crea el nav del header
-- NavResponsive: permite crear un nav vertical que sirve en las pantallas mas pequeñas, como móvil
+- Header.js: This is the main file. It creates and renders all header elements in the HTML. It calls other components (each component creates a different element).
+- IconHeader.js: Creates a div with all icons in the top right corner (notifications, messages, login).
+- InputHeader.js: Creates the search bar. Its event allows you to save the searched word and call the function that displays the photos in the main section.
 
-2. La carpeta "Main" agrupa todo el contenido del main:
+-InputSearchButton.js: Generates the icon search. Its event saves the searched word from the input and calls the function that displays the photos in the main section.
+- Logo.js: Creates the logo of the website. When it is clicked, the initial state of the page is loaded.
+- Nav.js: Creates the navigation bar in the header.
+NavResponsive.js: Creates a vertical navigation menu for smaller screens, like mobile devices.
 
-- PrintPhotos.js : tiene la funcion printMain() y printSectionPhotos() que nos permite pintar en el html el <main> y la <section> donde iré a pintar las fotos de la API.
+#### MAIN
+The "Main" folder contains all content related to the main section:
 
+- PrintPhotos.js: Contains the functions printMain() and printSectionPhotos(), which are used to render and display the API photos.
 - PeticionAPI.js:
-  --- la funcion "getUnsplashAPI": hace la petición a la API Unsplash
-  --- la funcion "printResults": imprime el resultado de la API según el valor del input guardado
-  ** Si NO hay resultados imprimo un alert para avisar al usuario (funcion en componente "AlertWindow").
-  ** Si hay resultados llamo la función "PrintPhotos" (en componente PrintPhotos.js) que se encarga de imprimir el resultado de la API en el <main>.
+The "getUnsplashAPI" function makes a request to the Unsplash API.
+The "printResults" function prints the API results based on the stored input value.
+If there are no results, it triggers an alert to notify the user (function in the "AlertWindow" component).
+If there are results, the function "PrintPhotos" (in PrintPhotos.js) is called, which handles the rendering of the API results within the component .
+- ButtonUpload.js: Creates the "Load more" button at the bottom of the page. Its click event enables the display of additional photos in the main section: the "page" parameter is updated in the API request to fetch photos from another page to avoid duplicates. The new photos are displayed using the loadMorePhotos() function, which is located in LoadMore.js.
 
-- ButtonUpload.js : pinta el botón "Cargar mas" a final de la página. Su evento "click" permite pintar mas fotos en la <section> : pasamos a la API el parametro "page" actualizado, para que imprima fotos de otra pagina y no salgan repetidas, y pintamos las nuevas fotos con la función loadMorePhotos(), en el file "LoadMore.js"
+- LoadMore.js: loads more photos from the API when you click on the "Load more" button at the bottom of the page.
 
-- LoadMore.js: se encarga de cargar mas fotos de la API cuando pulsamos en el botón "Cargar mas"a final de la página.
 
-PARTE CSS
+#### CSS 
 
-- style.css: aqui están las variables, el font usado, y estilos genericos
-- Header.css : aqui están los estilos de los elementos presentes en el <header>
-- HeaderResponsive: aquí están las correcciones de estilo con pantallas diferentes (móvil, iPad,...)
-- Main.css: aquí están los estilos de los elementos presentes en el <main>
-- MainResponsive: aquí están las correcciones de estilo con pantallas diferentes (móvil, iPad,...)
+- style.css: global variables, font used and global styles.
+- Header.css: style elements for the Header section
+- HeaderResponsive: styles for web responsive, on Header section. Styles corrections for different screens such as phone or iPad.
+- Main.css: style elements for the main section
+- MainResponsive: styles for web responsive, in the Main section. Corrections to the styles for different screens such as phone or iPad.
