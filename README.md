@@ -5,7 +5,7 @@ The project focuses on learning how to use VITE by creating components to better
 I used the Unsplash API to make requests that allow us to get different images based on the user's search.
 
 <div align="center">
-<img src="https://res.cloudinary.com/dr2vohk2z/image/upload/v1751545594/ROCKTHECODE/Proyecto_03_Pinterest_PicMuse/picmuse-mockup_wavpad.png" alt="picmuse mockup" />
+<img src="https://res.cloudinary.com/dr2vohk2z/image/upload/v1751546024/ROCKTHECODE/Proyecto_03_Pinterest_PicMuse/picmuse-mockup_batbwg.png" alt="picmuse mockup" />
 </div>
 
 ## Project Link:
