@@ -4,6 +4,28 @@ In this project I have created a replica of Pinterest.
 The project focuses on learning how to use VITE by creating components to better organize and reuse the code, using HTML, CSS and JS VANILLA.
 I used the Unsplash API to make requests that allow us to get different images based on the user's search.
 
+<div align="center">
+<img src="https://res.cloudinary.com/dr2vohk2z/image/upload/v1751545594/ROCKTHECODE/Proyecto_03_Pinterest_PicMuse/picmuse-mockup_wavpad.png" alt="picmuse mockup" />
+</div>
+
+## Project Link:
+https://picmuse.netlify.app
+
+## Developed with:
+- Javascript Vanilla
+- HTML
+- CSS
+
+## Requirements:
+Project created with Vite. If you open it please install NPM package:
+
+`npm install`
+
+<br>
+<br>
+
+## Development:
+
 ### JAVASCRIPT COMPONENTS
 The "main.js" file is linked to the index.html file: this is where I call all the essential functions to make the website work. The functions that I call are located in other components:
 
@@ -40,3 +62,7 @@ If there are results, the function "PrintPhotos" (in PrintPhotos.js) is called, 
 - HeaderResponsive: styles for web responsive, on Header section. Styles corrections for different screens such as phone or iPad.
 - Main.css: style elements for the main section
 - MainResponsive: styles for web responsive, in the Main section. Corrections to the styles for different screens such as phone or iPad.
+
+### Contact
+
+###### mireia95.granzotto@gmail.com
